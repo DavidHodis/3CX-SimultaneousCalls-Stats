@@ -25,7 +25,7 @@ def count_simultaneous_overlaps(csv_file):
     overlap_count = 0
     simultaneous_overlaps = {}
 
-    # Iterate over events and calculate how many calls are happening
+    # Iterate over events and calculate how many phone calls are happening
     for event in events:
         if event[1] == 'start':
             overlap_count += 1
