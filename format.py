@@ -17,7 +17,6 @@ formatted_dates = date.apply(lambda x: x.strftime('%d/%m/%Y'))
 df['CallDate'] = formatted_dates
 
 # Split the Call Time column into date and time
-# df['CallDate'] = df['Call Time'].dt.date
 df['CallStart'] = df['Call Time'].dt.time
 
 
